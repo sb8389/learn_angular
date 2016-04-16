@@ -1,1 +1,1 @@
-# learn_angular
+# learn_angular with git, node, npm
