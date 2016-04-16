@@ -1,0 +1,23 @@
+{
+  "name": "workshop1-angular-intro",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Initial tutorial to clone and install repo. Collaborators to decouple and enhance app logic to industry standards.",
+  "scripts": {
+    "serve": "http-server -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sb8389/learn_angular.git"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "bower": "1.4.x",
+    "http-server": "latest"
+  },
+  "author": "addevonly",
+  "bugs": {
+    "url": "https://github.com/sb8389/learn_angular/issues"
+  },
+  "homepage": "https://github.com/sb8389/learn_angular#readme"
+}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+
+  <title>{{title}}</title>
+  <meta name="description" content="Initial tutorial to clone and install repo">
+  <meta name="author" content="addevonly">
+    <link rel="stylesheet" type="text/css" href="bower_components/angular-material/angular-material.css">
+    <style>
+        md-content{
+            width: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        md-card{
+            width: 400px;
+            height: 400px;
+        }
+body{background:grey;}
+    </style>
+</head>
+
+<body>
+    <div ng-controller="AppCtrl as vm" md-theme="default">
+
+      <md-content class="main-content">
+        <md-card>
+          <img ng-src="{{vm.imagePath}}" width="200px" height="200px">
+          <md-card-content>
+            <h2 class="md-title">{{vm.contentTitle}}</h2>
+            <p>
+              If life gives you lemons, make lemonade.
+            </p>
+          </md-card-content>
+          <div>
+            <input placeholder="Set title" ng-model="vm.contentTitle">
+            <button ng-click="vm.setImagePath()">Feel Better</button>
+          </div>
+        </md-card>
+      </md-content>
+
+    </div>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="bower_components/angular-material/angular-material.min.js"></script>
+    <script src="./appCtrl.js"></script>
+</body>
+</html>
