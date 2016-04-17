@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <title> I am an Angular Expert</title>
+  </head>
+  <body ng-app="userApp">
+      <div ng-controller="userCtrl">
+         <label> Username </label>
+         <input type="text" name="Username:" ng-model="userName" /> <br>
+         <label> Password </label>
+         <input type="text" name="Password:" ng-model="password" /> <br>
+         <input type="submit" Value="Submit" ng-click="login()">
+      </div>
+      <script src="bower_components/angular/angular.min.js"></script>
+      <script src="bower_components/angular-aria/angular-aria.min.js"></script>
+      <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+      <script src="bower_components/angular-material/angular-material.min.js"></script>
+      <script src="./UserCtrl.js"></script>
+  </body>
+</html>
